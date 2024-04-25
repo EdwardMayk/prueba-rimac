@@ -1,0 +1,34 @@
+.container-subheader {
+    display: flex;
+    justify-content: center;
+    background-color: #EDEFFC;
+    gap: 20px;
+
+
+    .purple-text {
+        color: black; /* Color morado para el texto */
+    }
+
+    .gray-text {
+        color: #7981B2; /* Color gris para el texto */
+    }
+}
+
+.item {
+    margin-bottom: 10px;
+}
+
+.circle {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #4F4FFF;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 24px;
+
+    margin-right: 10px;
+}

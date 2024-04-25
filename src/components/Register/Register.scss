@@ -1,0 +1,161 @@
+.principal-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 200px;
+    padding-top: 50px;
+
+    .image-container {
+        .image-major {
+            width: 480px;
+            height: 560px;
+            border-radius: 20px;
+        }
+    }
+
+    .register-container {
+        flex: 1;
+        max-width: 500px;
+
+        h2 {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .submenu-safe {
+            background: linear-gradient(to right, #00f4de, #03fba6);
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .register-form {
+            display: flex;
+            flex-direction: column;
+
+            .document-container {
+                display: flex;
+                align-items: center;
+            }
+
+            .checkbox-container {
+                display: flex;
+                flex-direction: column;
+                margin-top: 10px;
+            }
+
+            .document-type {
+                border-radius: 8px 0px 0px 8px;
+                width: 30%;
+            }
+
+            .input-document {
+                border-radius: 0px 8px 8px 0px;
+                width: 100%;
+            }
+
+            .phone-container {
+                margin-top: 10px;
+
+                .phone-type {
+                    border-radius: 8px 0px 0px 8px;
+                    width: 100%;
+                }
+            }
+
+            .paragraph-terms {
+                font-size: 12px;
+                font-weight: bold;
+                margin-top: 10px;
+                text-decoration: underline;
+            }
+
+
+            input[type="text"],
+            select {
+                margin-bottom: 10px;
+                border: 1px solid #000000;
+                box-sizing: border-box;
+                font-size: 14px;
+                height: 56px;
+                padding: 16px;
+            }
+
+            input[type="checkbox"] {
+                margin-right: 10px;
+                width: 20px;
+                height: 20px;
+                background-color: black;
+            }
+
+            label {
+                font-size: 14px;
+            }
+
+            p {
+                font-size: 12px;
+                margin-top: 10px;
+            }
+
+            button {
+                background-color: #03050F;
+                color: white;
+                border-radius: 40px;
+                width: 195px;
+                height: 64px;
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .principal-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .image-container {
+        margin-bottom: 20px;
+    }
+
+    .register-container {
+        max-width: 100%;
+    }
+
+    .register-form {
+        button {
+            width: 100%;
+        }
+    }
+
+    .principal-container {
+        .image-container {
+            .image-major {
+                width: 136px;
+                height: 160px;
+                border-radius: 20px;
+            }
+        }
+    
+        .register-container {
+            .title-container{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    
+
+}
